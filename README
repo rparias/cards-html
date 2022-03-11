@@ -1,0 +1,4 @@
+Please create the HTML and CSS for the provided comps in the "_comps" folder
+
+- This should work in Edge, latest Firefox, Chrome and Safari as well as devices (iPad and iPhone portrait view)
+- "check.svg" is provided for you as well as font styles (styles.css) and a link to normalize css (index.html)
