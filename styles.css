@@ -181,7 +181,8 @@ h3 {
 }
 
 .service__body--title {
-  padding: 2em 1em 1em;
+  padding: 2.5em 1em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .service__body--title p {
@@ -226,7 +227,7 @@ h3 {
   text-align: center;
 }
 
-.service--popular button {
+.service--popular .btn {
   background: var(--clr-accent);
   color: var(--clr-light);
 }
