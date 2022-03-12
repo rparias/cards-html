@@ -222,11 +222,18 @@ h3 {
 
   .service {
     margin: 0;
-    min-width: 250px;
+    min-width: 220px;
+  }
+
+  .service:nth-child(1) {
+    border-radius: .5em 0 0 .5em;
+  }
+
+  .service:nth-child(3) {
+    border-radius: 0 .5em .5em 0;
   }
 
   .service--active {
-    z-index: 2;
     width: calc(100% + .5em);
   }
 }
@@ -237,7 +244,6 @@ h3 {
   }
 
   .service--active {
-    z-index: 2;
     width: calc(100% + .5em);
   }
 }
