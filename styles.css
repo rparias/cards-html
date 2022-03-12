@@ -55,9 +55,44 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-:focus {
-  outline: 1px solid var(--clr-accent);
-  outline-offset: 1px;
+/* Bullets */
+ul{
+  padding:0.5em;
+  padding-left:2em;
+  text-align: left;
+}
+
+ul.custom-bullet{
+  list-style:none;
+}
+
+ul.custom-bullet > li{
+  clear:left;
+}
+
+ul.custom-bullet > li:before {
+  content:"";
+  height:1em;
+  width:1em;
+  display:block;
+  float:left;
+  margin-left:-1.5em;
+  margin-top: 0.25em;
+  background-position:bottom;
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+ul.check > li:before{
+  background-image:url('./check.svg');
+  background-size:90%;
+  background-position:center;
+  transition: background-size 0.3s;
+  -webkit-transition: background-size 0.3s;
+}
+
+ul.check > li:hover:before{
+  background-size:100%;
 }
 
 /* Buttons */
@@ -72,6 +107,11 @@ strong {
   box-shadow: var(--bs);
   border-radius: .5em;
   width: 100%;
+}
+
+:focus {
+  outline: 1px solid var(--clr-accent);
+  outline-offset: 1px;
 }
 
 /* Typography */
