@@ -10,18 +10,18 @@
   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   --fw-reg: 300;
-  --fw-bold: 900;
+  --fw-bold: 700;
 
   --clr-light: #fff;
   --clr-black: #000;
   --clr-dark: #151E2E;
   --clr-accent: #3EBDCA;
+  --clr-gray: #F9FAFB;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  /* body should be 16px */
-  --fs-body: 1rem; 
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.1rem;
+  --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -29,17 +29,17 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.2rem;
+    --fs-body: 1.1rem;
   }
 }
 
 /* General styles */
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -47,7 +47,7 @@ body {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 4em 2em 0;
 }
 
 img {
@@ -101,4 +101,34 @@ h2 {
 
 h3 {
   font-size: var(--fs-h3);
+}
+
+.section__title {
+  margin-bottom: .5em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.section__subtitle {
+  margin: 0;
+}
+
+.section__subtitle--heading {
+  text-transform: uppercase;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro {
+  line-height: 1.2;
+  padding: 0 2em;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  max-width: 1150px;
+  margin: 0 auto;
 }
